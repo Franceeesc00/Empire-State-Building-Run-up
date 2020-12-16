@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: ;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 15%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: blanchedalmond;
+}
+
+#galeria {
+    background-color: gray;
+    color: black;
+}
+
+.header {
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 10%;
+}
+
+.one-column h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.one-column img {
+    width: 100%;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 5%;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    margin-bottom: -5px;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#footer p {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/*Clases auxiliares*/
+
+.padding-0 {
+    padding: 0px;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column {
+        width: 100%;
+    }
+    .two-column img {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
+    li a {
+        font-size: 30px;
+    }
+    ul {
+        padding: 0px;
+    }
+    .header {
+        background-image: url("../img/header.jpg");
+        background-size: auto;
+    }
+}
